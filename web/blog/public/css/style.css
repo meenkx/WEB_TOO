@@ -7,7 +7,7 @@
 
 
 -----------------------------------------------------------------------------------
-  
+
   CSS INDEX
   ===================
 
@@ -132,14 +132,14 @@
  #scrollUp {
     background: #fcc236 none repeat scroll 0 0;
 }
- 
+
 
 /*---------------------------------------
   End Scroll To Top
 ----------------------------------------*/
 /*---------------------------------------
   03. About Area
-----------------------------------------*/ 
+----------------------------------------*/
 
 .about {
     margin-left: -15px;
@@ -263,7 +263,7 @@ About 2
 
 /*---------------------------------------
   04. Service Area
-----------------------------------------*/ 
+----------------------------------------*/
 
 .section__title h2.title__line {
     color: #1f2d30;
@@ -356,7 +356,7 @@ About 2
 
 /*---------------------------------------
   05. Offer Area
-----------------------------------------*/ 
+----------------------------------------*/
 
 .offer {
     display: flex;
@@ -748,7 +748,7 @@ About 2
     padding-top: 12px;
 }
 .htc__testimonial__wrap .slick-dots {
-    bottom: 1px;
+    bottom: -75px;
     right: -57px;
 }
 .htc__testimonial__wrap .slick-dots li.slick-active button::before,
@@ -797,7 +797,7 @@ About 2
     margin-top: 15px;
 }
 .testimonial__2 .htc__testimonial__wrap .slick-dots {
-    bottom: -40px;
+    bottom: -ุ40px;
     left: -99%;
     right: auto;
 }

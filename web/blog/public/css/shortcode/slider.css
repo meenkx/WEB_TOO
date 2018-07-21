@@ -62,11 +62,11 @@
     margin-top: 24px;
 }
 .slider__inner p {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 28px;
-    margin: 23px auto auto;
-    width: 57%;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 23px auto auto;
+  width: 57%;
 }
 .slider__btn {
     margin-top: 40px;
@@ -137,4 +137,3 @@
 .slider__activation__wrap.owl-theme .owl-nav {
   margin-top: 0;
 }
-
