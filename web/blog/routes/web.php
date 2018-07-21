@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('/');
+Route::get('/', function () { return view('main'); })->name('/');
+Route::get('/contact', function () { return view('suttikan.contact'); })->name('contact');
+Route::get('/About', function () { return view('suttikan.about'); })->name('About');
+
+
 
 Auth::routes();
 
