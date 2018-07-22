@@ -1,6 +1,6 @@
 <!-- Start Footer Area -->
 <footer class="htc__footer__area">
-    <div class="footer__top ptb--130" data--1f2d30__overlay="9.5" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat fixed center center / cover ;">
+    <div class="footer__top ptb--90" data--1f2d30__overlay="9.5" style="background: rgba(0, 0, 0, 0) url(images/bg/2.jpg) no-repeat fixed center center / cover ;">
         <div class="container">
             <div class="row">
                 <div class="htc__footer__wrap clearfix">
@@ -8,7 +8,7 @@
                     <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
                         <div class="footer">
                             <div class="footer__widget">
-                                <h2 class="ft__title">ABOUT</h2>
+                                <h2 class="ft__title">เกี่ยวกับเรา</h2>
                             </div>
                             <div class="ft__details">
                                 <p>บริษัทรับเหมางานระบบประกอบอาคารอย่างครบวงจร ครอบคลุมตั้งแต่งานออกแบบ ประมาณราคา งานติดตั้ง รวมถึงควบคุมคุณภาพงานและรับปรึกษาปัญหา พร้อมทั้งหาแนวทางแก้ใข ซึ่งบุคลากรล้วนมีประสบการณ์ในการทำงานโครงการทั้งภาครัฐและเอกชน</p>
@@ -20,7 +20,7 @@
                     <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 xmt-40">
                         <div class="footer quick__link">
                             <div class="footer__widget">
-                                <h2 class="ft__title">QUICK LINKS</h2>
+                                <h2 class="ft__title">ทางลัดลิ้งเพจ</h2>
                             </div>
                             <div class="footer__link">
                                 <ul class="ft__menu">
@@ -43,15 +43,15 @@
                     <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 smt-40 xmt-40">
                         <div class="footer">
                             <div class="footer__widget">
-                                <h2 class="ft__title">INSTAGRAM</h2>
+                                <h2 class="ft__title"><i class="fab fa-facebook"></i> FACEBOOK</h2>
                             </div>
                             <ul class="footer__instagram">
-                                <li><a href="#"><img src="images/blog/sm-img/1.jpg" alt="images"></a></li>
-                                <li><a href="#"><img src="images/blog/sm-img/2.jpg" alt="images"></a></li>
-                                <li><a href="#"><img src="images/blog/sm-img/3.jpg" alt="images"></a></li>
-                                <li><a href="#"><img src="images/blog/sm-img/4.jpg" alt="images"></a></li>
-                                <li><a href="#"><img src="images/blog/sm-img/5.jpg" alt="images"></a></li>
-                                <li><a href="#"><img src="images/blog/sm-img/6.jpg" alt="images"></a></li>
+                                <li><a href="#"><img height="60px" width="81px" src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/29572745_160325967920208_5202755793107729624_n.jpg?_nc_cat=0&oh=d9c0580d00f46dff4fa1d85665d33724&oe=5BCFBC24" alt="images"></a></li>
+                                <li><a href="#"><img height="60px" width="81px" src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/21432999_160298257922979_8225044877828681988_n.jpg?_nc_cat=0&oh=de9912b9f1c9b93d7ad9485596aa6549&oe=5BE537B8" alt="images"></a></li>
+                                <li><a href="#"><img height="60px" width="81px" src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/21761531_121590808460391_1740985147111001508_n.jpg?_nc_cat=0&oh=c2a7323fcf495366cdc9a5055043942d&oe=5C0FED1A" alt="images"></a></li>
+                                <li><a href="#"><img height="60px" width="81px" src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/21369410_119465375339601_2880378424628902752_n.jpg?_nc_cat=0&oh=6b77f7e370e66bafea65f669e798fa21&oe=5BDA9200" alt="images"></a></li>
+                                <li><a href="#"><img height="60px" width="81px" src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t31.0-8/20786132_115150099104462_119505344772036329_o.jpg?_nc_cat=0&oh=0be03aa7af2272a94ca3408e6b50d5d5&oe=5BD8A419" alt="images"></a></li>
+                                <li><a href="#"><img height="60px" width="81px" src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t31.0-8/20900755_115150122437793_5892478561681157306_o.jpg?_nc_cat=0&oh=5d87216afeb7d85de12252a40d473077&oe=5BCC1080" alt="images"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -60,19 +60,18 @@
                     <div class="col-md-3 col-lg-2 col-lg-offset-1 col-sm-6 col-xs-12 smt-40 xmt-40">
                         <div class="footer">
                             <div class="footer__widget">
-                                <h2 class="ft__title">INQUARY</h2>
+                                <h2 class="ft__title">สอบถามเกี่ยวกับ</h2>
                                 <div class="footer__link">
-                                    <ul class="ft__menu">
-                                        <li><a href="#">Construction</a></li>
-                                        <li><a href="#">Architecture</a></li>
-                                        <li><a href="#">Plambing</a></li>
-                                        <li><a href="#">Plambing</a></li>
-                                    </ul>
-                                    <ul class="ft__menu">
-                                        <li><a href="#">Painting</a></li>
-                                        <li><a href="#">Roofing</a></li>
-                                        <li><a href="#">Plambing</a></li>
-                                        <li><a href="#">Features</a></li>
+                                    <ul class="ft__menu" style="line-height:1.2">
+                                        <li><a href="#">การก่อสร้าง</a></li>
+                                        <li><a href="#">ตกแต่งภายใน</a></li>
+                                        <li><a href="#">สถาปัตยกรรมโครงสร้าง</a></li>
+                                        <li><a href="#">งานระบบโครงสร้าง</a></li>
+                                        <li><a href="#">งานออกแบบ</a></li>
+                                        <li><a href="#">งานประมาณราคา</a></li>
+                                        <li><a href="#">ควบคุมคุณภาพงาน</a></li>
+                                        <li><a href="#">ปรึกษาปัญหา</a></li>
+                                        <li><a href="#">หาแนวทางแก้ใข</a></li>
                                     </ul>
                                 </div>
                             </div>

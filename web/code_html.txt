@@ -90,3 +90,6 @@
 [data--black__overlay="3"]:before {
     opacity: 0.3;
 }
+
+
+              <div class="slide slider__fixed--height slide__align--center" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url(images/slider/bg/2.jpg) no-repeat scroll 0 0 / cover;">

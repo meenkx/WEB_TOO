@@ -7,7 +7,7 @@
       <div class="slider__container">
           <div class="slider__activation__wrap owl-carousel owl-theme">
               <!-- Start Single Slide -->
-              <div class="slide slider__fixed--height slide__align--center" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url(images/slider/bg/2.jpg) no-repeat scroll 0 0 / cover;">
+              <div class="slide slider__fixed--height slide__align--center" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url(https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/22688810_127396824546456_2234796810863713992_n.jpg?_nc_cat=0&oh=1a632393d3aa620388da04d545a9db90&oe=5BD439E3) no-repeat scroll 0 0 / cover;">
                   <div class="container">
                       <div class="row">
                           <div class="col-md-12 col-lg-12">
@@ -25,7 +25,7 @@
               </div>
               <!-- End Single Slide -->
               <!-- Start Single Slide -->
-              <div class="slide slider__fixed--height slide__align--center" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url(images/slider/bg/1.jpg) no-repeat scroll 0 0 / cover;">
+              <div class="slide slider__fixed--height slide__align--center" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url(https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/21761667_121861738433298_8769087589941803430_n.jpg?_nc_cat=0&oh=6ce5ec0d18384774568349a5ea312a71&oe=5BE1FE28) no-repeat scroll 0 0 / cover;">
                   <div class="container">
                       <div class="row">
                           <div class="col-md-12 col-lg-12">
@@ -55,7 +55,7 @@
                           <div class="service foo">
                               <div class="service__thumb">
                                   <a href="single-service.html">
-                                      <img src="images/service/1.jpg" alt="service images">
+                                      <img src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/29572745_160325967920208_5202755793107729624_n.jpg?_nc_cat=0&oh=d9c0580d00f46dff4fa1d85665d33724&oe=5BCFBC24" alt="service images" height="207px";>
                                   </a>
                                   <div class="service__hover">
                                       <div class="service__action">
@@ -74,7 +74,7 @@
                           <div class="service foo">
                               <div class="service__thumb">
                                   <a href="single-service.html">
-                                      <img src="images/service/2.jpg" alt="service images">
+                                      <img src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/21432999_160298257922979_8225044877828681988_n.jpg?_nc_cat=0&oh=de9912b9f1c9b93d7ad9485596aa6549&oe=5BE537B8" alt="service images" height="207px";>
                                   </a>
                                   <div class="service__hover">
                                       <div class="service__action">
@@ -93,7 +93,7 @@
                           <div class="service foo">
                               <div class="service__thumb">
                                   <a href="single-service.html">
-                                      <img src="images/service/3.jpg" alt="service images">
+                                      <img src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/21761531_121590808460391_1740985147111001508_n.jpg?_nc_cat=0&oh=c2a7323fcf495366cdc9a5055043942d&oe=5C0FED1A" alt="service images" height="207px";>
                                   </a>
                                   <div class="service__hover">
                                       <div class="service__action">
@@ -112,7 +112,7 @@
                           <div class="service foo">
                               <div class="service__thumb">
                                   <a href="single-service.html">
-                                      <img src="images/service/4.jpg" alt="service images">
+                                      <img src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t1.0-9/21369410_119465375339601_2880378424628902752_n.jpg?_nc_cat=0&oh=6b77f7e370e66bafea65f669e798fa21&oe=5BDA9200" alt="service images" height="207px";>
                                   </a>
                                   <div class="service__hover">
                                       <div class="service__action">
@@ -171,7 +171,8 @@
           </div>
           <div class="htc__offer__thumb">
               <div class="htc__offer__thumb__inner" style="padding:45px 0px;">
-                  <img src="images/about/1.jpg" alt="offer img" style="height:410px">
+                <!-- <img src="images/about/1.jpg" alt="offer img" style="height:410px"> -->
+                  <img src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t31.0-8/20786132_115150099104462_119505344772036329_o.jpg?_nc_cat=0&oh=0be03aa7af2272a94ca3408e6b50d5d5&oe=5BD8A419" alt="offer img" style="height:485px;width:100%">
               </div>
           </div>
       </section>
@@ -186,8 +187,8 @@
               <div class="row">
                   <div class="col-xs-12">
                       <div class="section__title text-center">
-                          <h2 class="title__line">LATEST <span class="text--theme">PROJECTS</span></h2>
-                          <p style="font-size: 17px;">ข้อมูลโครงการการรับเหมาก่อสร้างล่าสุด ที่ได้ผลตอบรับเป็นอย่างดีเยี่ยมและเป้นที่น่าเชื่อถือของกลุ่มลูกค้าในหลาย ๆ โครงการ</p>
+                          <h2 class="title__line"><span class="text--theme">โปรเจค</span> ล่าสุด</h2>
+                          <p style="font-size: 17px;width:40%">ข้อมูลโครงการการรับเหมาก่อสร้างล่าสุด ที่ได้ผลตอบรับเป็นอย่างดีเยี่ยมและเป้นที่น่าเชื่อถือของกลุ่มลูกค้าในหลาย ๆ โครงการ</p>
                       </div>
                   </div>
               </div>
