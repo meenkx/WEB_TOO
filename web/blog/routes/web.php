@@ -14,6 +14,7 @@
 Route::get('/', function () { return view('main'); })->name('/');
 Route::get('/contact', function () { return view('suttikan.contact'); })->name('contact');
 Route::get('/About', function () { return view('suttikan.about'); })->name('About');
+//Route::get('/test', function () { return view('suttikan.test'); })->name('test');
 
 
 
@@ -21,3 +22,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'HomeController@about')->name('about');
+Route::post('/mailsender', 'MailController@MailSender')->name('MailSender');
+

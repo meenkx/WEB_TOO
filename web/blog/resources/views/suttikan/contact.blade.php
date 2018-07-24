@@ -1,10 +1,11 @@
 @extends('layouts.welcome')
 
 @section('content')
+    @include('sweetalert::alert')
 <div class="container-fluid">
   <div class="row justify-content-center">
     <!-- Start Bradcaump area -->
-    <div class="ht__bradcaump__area" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url({{ asset('images/bg/5.jpg')}}) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__area" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url({{ asset('https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.0-9/22154199_123790944907044_3164464005034116161_n.jpg?_nc_cat=0&oh=6a9c2ab488f04c53410eda2a40866a10&oe=5BC9B8C6')}}) no-repeat scroll center center / cover ;">
         <div class="ht__bradcaump__wrap">
             <div class="container">
                 <div class="row">
@@ -84,26 +85,27 @@
                     <div class="htc__contact__form__wrap">
                         <h2 class="title__line--5">ส่งข้อความหาเรา <i class="fas fa-smile-wink" style="color:#fcc236;"></i></h2>
                         <div class="contact-form-wrap">
-                            <form id="contact-form" action="https://d29u17ylf1ylz9.cloudfront.net/simply-construction/mail.php" method="post">
+                            <form id="contact-form" action="{{ route('MailSender') }}" method="POST">
+                                @csrf
                                 <div class="single-contact-inner">
                                     <div class="single-contact-form">
                                         <div class="contact-box name">
                                             <span class="changesize">ชื่อของคุณ (ชื่อ - นามสกุล) <span style="color:red">*</span></span>
-                                            <input type="text" name="name" autofocus required>
+                                            <input type="text" name="name" value="นาย ธนมงคล แย้มเดช" autofocus required>
                                         </div>
                                         <div class="contact-box email">
                                             <span class="changesize">ชื่อ E - mail <span style="color:red">*</span></span>
-                                            <input type="email" name="email" required>
+                                            <input type="email" name="email" value="tyamdej@mail.com" required>
                                         </div>
                                         <div class="contact-box subject">
                                             <span class="changesize">หัวข้อเรื่อง <span style="color:red">*</span></span>
-                                            <input type="text" name="subject" required>
+                                            <input type="text" name="subject" value="รายงานระบบหน้าเว็บ" required>
                                         </div>
                                     </div>
                                     <div class="single-contact-form">
                                         <div class="contact-box message">
                                             <span class="changesize">ระบุข้อความที่จะติดต่อ <span style="color:red">*</span></span>
-                                            <textarea name="message" required></textarea>
+                                            <textarea name="message" required>ระบบหน้าเว็บมีปัญหา</textarea>
                                         </div>
                                         <div class="contact-btn">
                                             <button type="submit" class="htc__btn btn--theme fontchange changesize">ส่งข้อความ</button>
@@ -112,9 +114,9 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="form-output">
-                            <p class="form-messege"></p>
-                        </div>
+                        {{--<div class="form-output">--}}
+                            {{--<p class="form-messege"></p>--}}
+                        {{--</div>--}}
                     </div>
                 </div>
             </div>
@@ -143,7 +145,7 @@
             scrollwheel: false,
 
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(23.7286, 90.3854), // New York
+            center: new google.maps.LatLng(13.872387, 100.634905), // Suttikan Engineering
 
             // How you would like to style the map.
             // This is where you would paste any style found on Snazzy Maps.
@@ -326,12 +328,11 @@
 
         // Let's also add a marker while we're at it
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(23.7286, 90.3854),
+            position: new google.maps.LatLng(13.872387, 100.634905),
             map: map,
-            title: 'Construction!',
-            icon: 'images/icons/map.png',
+            title: 'Construction !',
+            icon: '{{ asset('images/icons/map.png') }}',
             animation:google.maps.Animation.BOUNCE
-
         });
     }
 </script>

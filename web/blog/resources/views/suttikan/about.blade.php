@@ -4,7 +4,7 @@
 <div class="container-fluid">
   <div class="row justify-content-center">
     <!-- Start Bradcaump area -->
-    <div class="ht__bradcaump__area" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url({{ asset('images/bg/5.jpg')}}) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__area" data--black__overlay="6" style="background: rgba(0, 0, 0, 0) url({{ asset('https://scontent.fbkk20-1.fna.fbcdn.net/v/t1.0-9/21761667_121861738433298_8769087589941803430_n.jpg?_nc_cat=0&oh=6ce5ec0d18384774568349a5ea312a71&oe=5BE1FE28')}}) no-repeat scroll center center / cover ;">
         <div class="ht__bradcaump__wrap">
             <div class="container">
                 <div class="row">
@@ -60,7 +60,7 @@
         </div>
         <div class="htc__offer__thumb">
             <div class="htc__offer__thumb__inner">
-                <img src="images/about/1.jpg" alt="offer img">
+                <img src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t31.0-8/20786132_115150099104462_119505344772036329_o.jpg?_nc_cat=0&oh=0be03aa7af2272a94ca3408e6b50d5d5&oe=5BD8A419" alt="offer img">
             </div>
         </div>
     </section>

@@ -59,7 +59,7 @@
                                   </a>
                                   <div class="service__hover">
                                       <div class="service__action">
-                                          <a href="single-service.html">DETAILS</a>
+                                          <a href="single-service.html">รายละเอียด</a>
                                       </div>
                                   </div>
                               </div>
@@ -78,7 +78,7 @@
                                   </a>
                                   <div class="service__hover">
                                       <div class="service__action">
-                                          <a href="single-service.html">DETAILS</a>
+                                          <a href="single-service.html">รายละเอียด</a>
                                       </div>
                                   </div>
                               </div>
@@ -97,7 +97,7 @@
                                   </a>
                                   <div class="service__hover">
                                       <div class="service__action">
-                                          <a href="single-service.html">DETAILS</a>
+                                          <a href="single-service.html">รายละเอียด</a>
                                       </div>
                                   </div>
                               </div>
@@ -116,7 +116,7 @@
                                   </a>
                                   <div class="service__hover">
                                       <div class="service__action">
-                                          <a href="single-service.html">DETAILS</a>
+                                          <a href="single-service.html">รายละเอียด</a>
                                       </div>
                                   </div>
                               </div>
@@ -172,7 +172,7 @@
           <div class="htc__offer__thumb">
               <div class="htc__offer__thumb__inner" style="padding:45px 0px;">
                 <!-- <img src="images/about/1.jpg" alt="offer img" style="height:410px"> -->
-                  <img src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t31.0-8/20786132_115150099104462_119505344772036329_o.jpg?_nc_cat=0&oh=0be03aa7af2272a94ca3408e6b50d5d5&oe=5BD8A419" alt="offer img" style="height:485px;width:100%">
+                  <img src="https://scontent.fbkk2-6.fna.fbcdn.net/v/t31.0-8/20786132_115150099104462_119505344772036329_o.jpg?_nc_cat=0&oh=0be03aa7af2272a94ca3408e6b50d5d5&oe=5BD8A419" alt="offer img" style="height:410px;width:100%">
               </div>
           </div>
       </section>
