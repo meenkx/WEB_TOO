@@ -199,7 +199,7 @@
                           <div class="project foo">
                               <div class="project__thumb">
                                   <a href="single-project.html">
-                                      <img src="images/lst-project-2/1.jpg" alt="project images">
+                                      <img src="{{ asset('images/suttikanPIC/project/pic-1.png') }}" alt="project images" width="400px" height="307px">
                                   </a>
                                   <div class="project__hover__info">
                                       <div class="project__action">
@@ -216,7 +216,7 @@
                           <div class="project foo">
                               <div class="project__thumb">
                                   <a href="single-project.html">
-                                      <img src="images/lst-project-2/2.jpg" alt="project images">
+                                      <img src="{{ asset('images/suttikanPIC/project/pic-2.png') }}" alt="project images" width="400px" height="307px">
                                   </a>
                                   <div class="project__hover__info">
                                       <div class="project__action">
@@ -233,7 +233,7 @@
                           <div class="project foo">
                               <div class="project__thumb">
                                   <a href="single-project.html">
-                                      <img src="images/lst-project-2/3.jpg" alt="project images">
+                                      <img src="{{ asset('images/suttikanPIC/project/pic-3.png') }}" alt="project images" width="400px" height="307px">
                                   </a>
                                   <div class="project__hover__info">
                                       <div class="project__action">
@@ -250,7 +250,7 @@
                           <div class="project foo">
                               <div class="project__thumb">
                                   <a href="single-project.html">
-                                      <img src="images/lst-project-2/4.jpg" alt="project images">
+                                      <img src="{{ asset('images/suttikanPIC/project/pic-4.png') }}" alt="project images" width="400px" height="307px">
                                   </a>
                                   <div class="project__hover__info">
                                       <div class="project__action">
@@ -267,7 +267,7 @@
                           <div class="project foo">
                               <div class="project__thumb">
                                   <a href="single-project.html">
-                                      <img src="images/lst-project-2/5.jpg" alt="project images">
+                                      <img src="{{ asset('images/suttikanPIC/project/pic-5.png') }}" alt="project images" width="400px" height="307px">
                                   </a>
                                   <div class="project__hover__info">
                                       <div class="project__action">
@@ -284,7 +284,7 @@
                           <div class="project foo">
                               <div class="project__thumb">
                                   <a href="single-project.html">
-                                      <img src="images/lst-project-2/6.jpg" alt="project images">
+                                      <img src="{{ asset('images/suttikanPIC/project/pic-6.png') }}" alt="project images" width="400px" height="307px">
                                   </a>
                                   <div class="project__hover__info">
                                       <div class="project__action">

@@ -14,7 +14,10 @@
 Route::get('/', function () { return view('main'); })->name('/');
 Route::get('/contact', function () { return view('suttikan.contact'); })->name('contact');
 Route::get('/About', function () { return view('suttikan.about'); })->name('About');
-//Route::get('/test', function () { return view('suttikan.test'); })->name('test');
+Route::get('/service', function () { return view('suttikan.service'); })->name('service');
+Route::get('/project-main', function () { return view('suttikan.project.projectmain'); })->name('projectmain');
+Route::get('/project-detail', function () { return view('suttikan.project.project-list'); })->name('projectlist');
+Route::get('/login-register', function () { return view('auth.login-register'); })->name('login-register');
 
 
 

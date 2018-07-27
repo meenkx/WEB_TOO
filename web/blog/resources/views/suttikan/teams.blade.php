@@ -20,7 +20,7 @@
                         <div class="team foo">
                             <div class="team__inner">
                                 <div class="team__thumb">
-                                    <img src="images/team/1.jpg" alt="team image">
+                                    <img src="{{ asset('images/suttikanPIC/profile/Profile-1.png') }}" alt="team image" class="img-responsive-meeenkx">
                                 </div>
                             </div>
                             <div class="team__details">
@@ -39,7 +39,7 @@
                         <div class="team foo">
                             <div class="team__inner">
                                 <div class="team__thumb">
-                                    <img src="images/team/1.jpg" alt="team image">
+                                    <img src="{{ asset('images/suttikanPIC/profile/Profile-5.png') }}" alt="team image" class="img-responsive-meeenkx">
                                 </div>
                             </div>
                             <div class="team__details">
@@ -58,7 +58,7 @@
                           <div class="team foo">
                               <div class="team__inner">
                                   <div class="team__thumb">
-                                      <img src="images/team/1.jpg" alt="team image" class="img-responsive-meeenkx">
+                                      <img src="{{ asset('images/suttikanPIC/profile/Profile-4.png') }}" alt="team image" class="img-responsive-meeenkx">
                                   </div>
                               </div>
                               <div class="team__details">
@@ -73,7 +73,7 @@
                           <div class="team foo">
                               <div class="team__inner">
                                   <div class="team__thumb">
-                                      <img src="images/team/2.jpg" alt="team image" class="img-responsive-meeenkx">
+                                      <img src="{{ asset('images/suttikanPIC/profile/Profile-3.png') }}" alt="team image" class="img-responsive-meeenkx">
                                   </div>
                               </div>
                               <div class="team__details">
@@ -88,7 +88,7 @@
                           <div class="team foo">
                               <div class="team__inner">
                                   <div class="team__thumb">
-                                      <img src="images/team/3.jpg" alt="team image" class="img-responsive-meeenkx">
+                                      <img src="{{ asset('images/suttikanPIC/profile/Profile-2.png') }}" alt="team image" class="img-responsive-meeenkx">
                                   </div>
                               </div>
                               <div class="team__details">
@@ -109,7 +109,7 @@
                       <div class="team foo">
                           <div class="team__inner">
                               <div class="team__thumb">
-                                  <img src="images/team/1.jpg" alt="team image">
+                                  <img src="{{ asset('images/suttikanPIC/profile/Profile-7.png') }}" alt="team image" class="img-responsive-meeenkx">
                               </div>
                           </div>
                           <div class="team__details">
@@ -124,7 +124,7 @@
                       <div class="team foo">
                           <div class="team__inner">
                               <div class="team__thumb">
-                                  <img src="images/team/2.jpg" alt="team image">
+                                  <img src="{{ asset('images/suttikanPIC/profile/Profile-13.png') }}" alt="team image" class="img-responsive-meeenkx">
                               </div>
                           </div>
                           <div class="team__details">
@@ -139,7 +139,7 @@
                       <div class="team foo">
                           <div class="team__inner">
                               <div class="team__thumb">
-                                  <img src="images/team/3.jpg" alt="team image">
+                                  <img src="{{ asset('images/suttikanPIC/profile/Profile-12.png') }}" alt="team image" class="img-responsive-meeenkx">
                               </div>
                           </div>
                           <div class="team__details">
@@ -154,7 +154,7 @@
                       <div class="team foo">
                           <div class="team__inner">
                               <div class="team__thumb">
-                                  <img src="images/team/4.jpg" alt="team image">
+                                  <img src="{{ asset('images/suttikanPIC/profile/Profile-9.png') }}" alt="team image" class="img-responsive-meeenkx">
                               </div>
                           </div>
                           <div class="team__details">
@@ -171,7 +171,7 @@
                       <div class="team foo">
                           <div class="team__inner">
                               <div class="team__thumb">
-                                  <img src="images/team/1.jpg" alt="team image">
+                                  <img src="{{ asset('images/suttikanPIC/profile/Profile-14.png') }}" alt="team image" class="img-responsive-meeenkx">
                               </div>
                           </div>
                           <div class="team__details">
@@ -186,11 +186,11 @@
                       <div class="team foo">
                           <div class="team__inner">
                               <div class="team__thumb">
-                                  <img src="images/team/2.jpg" alt="team image">
+                                  <img src="{{ asset('images/suttikanPIC/profile/Profile-8.png') }}" alt="team image" class="img-responsive-meeenkx">
                               </div>
                           </div>
                           <div class="team__details">
-                              <h2><a href="#">นายกิตติพงศ์   ฟุ้งสันเทียะ</a></h2>
+                              <h2><a href="#">นายกิตติพงศ์ ฟุ้งสันเทียะ</a></h2>
                               <h4>วิศวกรเครื่องกลโครงการ</h4>
                           </div>
                       </div>
@@ -201,7 +201,7 @@
                       <div class="team foo">
                           <div class="team__inner">
                               <div class="team__thumb">
-                                  <img src="images/team/3.jpg" alt="team image">
+                                  <img src="{{ asset('images/suttikanPIC/profile/Profile-11.png') }}" alt="team image" class="img-responsive-meeenkx">
                               </div>
                           </div>
                           <div class="team__details">
@@ -216,11 +216,11 @@
                       <div class="team foo">
                           <div class="team__inner">
                               <div class="team__thumb">
-                                  <img src="images/team/4.jpg" alt="team image">
+                                  <img src="{{ asset('images/suttikanPIC/profile/Profile-10.png') }}" alt="team image" class="img-responsive-meeenkx">
                               </div>
                           </div>
                           <div class="team__details">
-                              <h2><a href="#">นายสาธิต   ศรีสุวรรณ </a></h2>
+                              <h2><a href="#">นายสาธิต ศรีสุวรรณ</a></h2>
                               <h4>M&E Auto Cad</h4>
                           </div>
                       </div>
@@ -231,7 +231,7 @@
                       <div class="team foo">
                           <div class="team__inner">
                               <div class="team__thumb">
-                                  <img src="images/team/4.jpg" alt="team image">
+                                  <img src="{{ asset('images/suttikanPIC/profile/Profile-6.png') }}" alt="team image" class="img-responsive-meeenkx">
                               </div>
                           </div>
                           <div class="team__details">

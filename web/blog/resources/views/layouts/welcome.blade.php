@@ -135,8 +135,8 @@
               border-radius: 7px;
             }
             .img-responsive-meeenkx{
-              width: 260px;
-              height: 240px
+              width: 165px;
+              height: 186px
             }
             .team__thumb{
               margin: auto auto;
@@ -145,7 +145,7 @@
             }
             .team__details h2 a{
               font-family: 'Prompt', sans-serif !important;
-              font-size: 15px
+              font-size: 14px
             }
             .team__details h4{
               font-family: 'Prompt', sans-serif !important;
@@ -201,9 +201,9 @@
                         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                             <div class="header__top__right">
                                 <ul class="login-register">
-                                    <li><a href="login-register.html">LOGIN</a></li>
+                                    <li><a href="{{ route('login-register') }}">LOGIN</a></li>
                                     <li class="separator">/</li>
-                                    <li><a href="login-register.html">REGISTER</a></li>
+                                    <li><a href="{{ route('login-register') }}">REGISTER</a></li>
                                 </ul>
                                 <!-- <div class="heaher__top__btn">
                                     <a href="#">สนใจติดต่อ</a>
@@ -220,8 +220,8 @@
                     <div class="row">
                         <div class="col-md-2 col-sm-6 col-xs-7">
                             <div class="logo">
-                                <a href="index.html">
-                                    <img src="images/logo/sinply-construction.png" alt="logo image">
+                                <a href="{{ route('/') }}">
+                                    <img src="{{ asset('images/logo/sinply-construction.png') }}" alt="logo image">
                                 </a>
                             </div>
                         </div>
@@ -230,34 +230,10 @@
                                 <ul class="main__menu">
                                     <li><a href="{{ route('/')}}">HOME</a></li>
                                     <li><a href="{{ route('About') }}">ABOUT</a></li>
-                                    <li><a href="service.html">SERVICES</a></li>
-                                    <li class="drop"><a href="#">pages</a>
+                                    <li><a href="{{ route('service') }}">SERVICES</a></li>
+                                    <li class="drop"><a href="{{ route('projectmain') }}">PROJECTS</a>
                                         <ul class="dropdown">
-                                            <li><a href="service.html">service</a></li>
-                                            <li><a href="single-service.html">Single service</a></li>
-                                            <li><a href="projects-one.html">projects one</a></li>
-                                            <li><a href="projects-two.html">projects two</a></li>
-                                            <li><a href="projects-three.html">projects three</a></li>
-                                            <li><a href="single-project.html">Single Project</a></li>
-                                            <li><a href="blog.html">BLog</a></li>
-                                            <li><a href="blog-one-column.html">blog one column</a></li>
-                                            <li><a href="blog-two-column.html">blog two column</a></li>
-                                            <li><a href="blog-details.html">blog Details</a></li>
-                                            <li><a href="login-register.html">Log in & Register</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="drop"><a href="#">PROJECTS</a>
-                                        <ul class="dropdown">
-                                            <li><a href="projects-one.html">projects one</a></li>
-                                            <li><a href="projects-two.html">projects two</a></li>
-                                            <li><a href="projects-three.html">projects three</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="drop"><a href="blog.html">BLOG</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog.html">BLog</a></li>
-                                            <li><a href="blog-one-column.html">blog one column</a></li>
-                                            <li><a href="blog-two-column.html">blog two column</a></li>
+                                            <li><a href="{{ route('projectlist') }}">projects three</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="{{ route('contact') }}">CONTACT</a></li>
@@ -266,41 +242,11 @@
                             <div class="mobile-menu clearfix visible-xs visible-sm">
                                 <nav id="mobile_dropdown">
                                     <ul>
-                                        <li><a href="index.html">Home</a>
-                                            <ul>
-                                                <li><a href="index.html">Home 01</a></li>
-                                                <li><a href="index-2.html">Home 02</a></li>
-                                                <li><a href="index-3.html">Home 03</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="{{ route('/')}}">HOME</a></li>
                                         <li><a href="{{ route('About')}}">ABOUT</a></li>
-                                        <li><a href="#">PROJECTS</a>
+                                        <li><a href="{{ route('projectmain') }}">PROJECTS</a>
                                             <ul>
-                                                <li><a href="projects-one.html">projects one</a></li>
-                                                <li><a href="projects-two.html">projects two</a></li>
-                                                <li><a href="projects-three.html">projects three</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages</a>
-                                            <ul>
-                                                <li><a href="service.html">service</a></li>
-                                                <li><a href="single-service.html">Single service</a></li>
-                                                <li><a href="projects-one.html">projects one</a></li>
-                                                <li><a href="projects-two.html">projects two</a></li>
-                                                <li><a href="projects-three.html">projects three</a></li>
-                                                <li><a href="single-project.html">Single Project</a></li>
-                                                <li><a href="blog.html">BLog</a></li>
-                                                <li><a href="blog-one-column.html">blog one column</a></li>
-                                                <li><a href="blog-two-column.html">blog two column</a></li>
-                                                <li><a href="blog-details.html">blog Details</a></li>
-                                                <li><a href="login-register.html">Log in & Register</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="blog.html">blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">BLog</a></li>
-                                                <li><a href="blog-one-column.html">blog one column</a></li>
-                                                <li><a href="blog-two-column.html">blog two column</a></li>
+                                                <li><a href="{{ route('projectlist') }}">projects three</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="{{ route('contact') }}">contact</a></li>
@@ -338,7 +284,7 @@
     <!-- Bootstrap framework js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- pacejs loading -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-bounce.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/themes/black/pace-theme-flat-top.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
     <script type="text/javascript">
     /* loading */
@@ -347,7 +293,6 @@
     });
     </script>
 
-    </script>
     <!-- All js plugins included in this file. -->
     <script src="{{ asset('js/plugins.js') }}"></script>
     <script src="{{ asset('js/slick.min.js') }}"></script>
