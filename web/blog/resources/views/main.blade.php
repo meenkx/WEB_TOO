@@ -178,7 +178,7 @@
       </section>
       <!-- End Offer Area -->
 
-      @component('suttikan.counterup')
+      @component('suttikan.counterup',['project_all'=>$project_all ,'project_success'=>$project_success,'project_waitaa'=>$project_waitaa])
       @endcomponent()
 
       <!-- Start Latest Project Area -->
@@ -194,108 +194,53 @@
               </div>
               <div class="row">
                   <div class="htc__latest__project__wrap clearfix mt--60">
+                      @foreach($picproject as $picprojecta)
                       <!-- Start Single Project -->
                       <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                           <div class="project foo">
                               <div class="project__thumb">
-                                  <a href="single-project.html">
-                                      <img src="{{ asset('images/suttikanPIC/project/pic-1.png') }}" alt="project images" width="400px" height="307px">
+                                  <a href="/project-detail/{{ $picprojecta->CodeName }}">
+                                      <?php
+                                          $a = $picprojecta->image_project;
+                                          $b = $picprojecta->name;
+                                          $image = explode(",",$a);
+                                          $image_url = "/projects/images/".$b."/".$image[0];
+                                      ?>
+                                      @if($image[0])
+                                          <img src="{{ $image_url }}" alt="project images" width="400px" height="307px">
+                                      @endif
                                   </a>
                                   <div class="project__hover__info">
                                       <div class="project__action">
-                                          <h2><a href="single-project.html">โครงการ FREEZE & DRY  BUILDING</a></h2>
-                                          <h4>ระยะเวลา : <span>อยู่ระหว่างดำเนินการ</span></h4>
+                                          <h2><a href="/project-detail/{{ $picprojecta->CodeName }}" style="padding: 0px 35px">{{ $picprojecta->name }}</a></h2>
+                                          <?php
+                                          $start = explode("/",$picprojecta->start_project);
+                                          $start1 = $start[2]-543;
+                                          $start2 = $start[1];
+                                          $start3 = $start[0];
+                                          $start_final = $start1."-".$start2."-".$start3;
+
+                                          if($picprojecta->end_project!=0){
+                                              $end = explode("/",$picprojecta->end_project);
+                                              $end1 = $end[2]-543;
+                                              $end2 = $end[1];
+                                              $end3 = $end[0];
+                                              $end_final = $end1."-".$end2."-".$end3;
+                                          }
+                                          ?>
+                                          @if($picprojecta->end_project)
+                                              <h4>ระยะเวลา : {{ (int)abs((strtotime($start_final) - strtotime($end_final))/(60*60*24*30)) }} เดือน</h4>
+                                          @else
+                                              <h4>อยู่ในระหว่างดำเนินโครงการ</h4>
+                                          @endif
+                                          <h4 style="margin-top: 5px">มูลค่างาน <span>{{ $picprojecta->job_value }}</span></h4>
                                       </div>
                                   </div>
                               </div>
                           </div>
                       </div>
                       <!-- End Single Project -->
-                      <!-- Start Single Project -->
-                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                          <div class="project foo">
-                              <div class="project__thumb">
-                                  <a href="single-project.html">
-                                      <img src="{{ asset('images/suttikanPIC/project/pic-2.png') }}" alt="project images" width="400px" height="307px">
-                                  </a>
-                                  <div class="project__hover__info">
-                                      <div class="project__action">
-                                          <h2><a href="single-project.html">โครงการ 55 Market</a></h2>
-                                          <h4>ระยะเวลา : <span>อยู่ระหว่างดำเนินการ</span></h4>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Single Project -->
-                      <!-- Start Single Project -->
-                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                          <div class="project foo">
-                              <div class="project__thumb">
-                                  <a href="single-project.html">
-                                      <img src="{{ asset('images/suttikanPIC/project/pic-3.png') }}" alt="project images" width="400px" height="307px">
-                                  </a>
-                                  <div class="project__hover__info">
-                                      <div class="project__action">
-                                          <h2><a href="single-project.html">โครงการกังหันไอน้ำ</a></h2>
-                                          <h4>ระยะเวลา : <span>อยู่ระหว่างดำเนินการ</span></h4>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Single Project -->
-                      <!-- Start Single Project -->
-                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                          <div class="project foo">
-                              <div class="project__thumb">
-                                  <a href="single-project.html">
-                                      <img src="{{ asset('images/suttikanPIC/project/pic-4.png') }}" alt="project images" width="400px" height="307px">
-                                  </a>
-                                  <div class="project__hover__info">
-                                      <div class="project__action">
-                                          <h2><a href="single-project.html">โครงการก่อสร้าง ซ่อมแซม-ปรับปรุง</a></h2>
-                                          <h4>ระยะเวลา : <span>3 เดือน</span></h4>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Single Project -->
-                      <!-- Start Single Project -->
-                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                          <div class="project foo">
-                              <div class="project__thumb">
-                                  <a href="single-project.html">
-                                      <img src="{{ asset('images/suttikanPIC/project/pic-5.png') }}" alt="project images" width="400px" height="307px">
-                                  </a>
-                                  <div class="project__hover__info">
-                                      <div class="project__action">
-                                          <h2><a href="single-project.html">SMC-NR ของบริษัท สยามมอร์ตาร์ จำกัด</a></h2>
-                                          <h4>ระยะเวลา : <span>7 เดือน</span></h4>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Single Project -->
-                      <!-- Start Single Project -->
-                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                          <div class="project foo">
-                              <div class="project__thumb">
-                                  <a href="single-project.html">
-                                      <img src="{{ asset('images/suttikanPIC/project/pic-6.png') }}" alt="project images" width="400px" height="307px">
-                                  </a>
-                                  <div class="project__hover__info">
-                                      <div class="project__action">
-                                          <h2><a href="single-project.html">SCG HOME SOLUTION</a></h2>
-                                          <h4>ระยะเวลา : <span>16 เดือน</span></h4>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Single Project -->
+                      @endforeach
                   </div>
               </div>
           </div>
@@ -323,8 +268,8 @@
       </section>
       <!-- End Call to Action Area -->
 
-      @component('suttikan.newsletter')
-      @endcomponent()
+      {{--@component('suttikan.newsletter')--}}
+      {{--@endcomponent()--}}
 
       <!-- Start Google Map Area -->
       <div class="map-contacts">

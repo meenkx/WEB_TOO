@@ -11,19 +11,27 @@
 |
 */
 
-Route::get('/', function () { return view('main'); })->name('/');
-Route::get('/contact', function () { return view('suttikan.contact'); })->name('contact');
+Route::get('/contact', function () {  })->name('contact');
 Route::get('/About', function () { return view('suttikan.about'); })->name('About');
 Route::get('/service', function () { return view('suttikan.service'); })->name('service');
-Route::get('/project-main', function () { return view('suttikan.project.projectmain'); })->name('projectmain');
-Route::get('/project-detail', function () { return view('suttikan.project.project-list'); })->name('projectlist');
 Route::get('/login-register', function () { return view('auth.login-register'); })->name('login-register');
-
-
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/UploadProject', 'HomeController@UploadProject')->name('UploadProject');
 Route::get('/about', 'HomeController@about')->name('about');
 Route::post('/mailsender', 'MailController@MailSender')->name('MailSender');
+Route::post('/UploadProjects', 'HomeController@UploadProjects')->name('UploadProjects');
+Route::post('/EditProjects/{ProjectName}', 'HomeController@EditProjects')->name('EditProjects');
+Route::get('/detail-project', 'HomeController@DetailProject')->name('DetailProject');
+Route::get('/detail-project/{CodeName}', 'HomeController@DetailProjectName')->name('DetailProjectName');
+Route::get('/delete-project/{Name}/{CodeName}', 'HomeController@DeleteProjectName')->name('DeleteProjectName');
+
+//UserPageController
+Route::get('/', 'UserPageController@main')->name('/');
+Route::get('/project-main', 'UserPageController@UserPageController')->name('projectmain');
+Route::get('/contact', 'UserPageController@contact')->name('contact');
+Route::get('/home-service', 'UserPageController@HomeService')->name('HomeService');
+Route::get('/project-detail/{codename}', 'UserPageController@projectdetail')->name('projectlist');
 

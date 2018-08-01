@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post('/delete-image/{project}/{filename}', 'ImageController@DeleteImage')->name('DeleteImage');
+Route::get('/test','ImageController@test');
+Route::get('/PicProfile/{CodeName}','ImageController@GetPicProject');
+Route::get('/GetPicCaption/{CodeName}','ImageController@GetPicCaption');
+Route::post('/CheckCodeProject','CheckData@checkCodeProject');

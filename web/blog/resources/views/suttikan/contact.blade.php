@@ -85,34 +85,31 @@
                         <div class="htc__contact__form__wrap">
                             <h2 class="title__line--5">ส่งข้อความหาเรา <i class="fas fa-smile-wink" style="color:#fcc236;"></i></h2>
                             <div class="contact-form-wrap">
-                                <form id="contact-form" action="{{ route('MailSender') }}" method="POST">
-                                    @csrf
                                     <div class="single-contact-inner">
                                         <div class="single-contact-form">
                                             <div class="contact-box name">
                                                 <span class="changesize">ชื่อของคุณ (ชื่อ - นามสกุล) <span style="color:red">*</span></span>
-                                                <input type="text" name="name" value="นาย ธนมงคล แย้มเดช" autofocus required>
+                                                <input type="text" id="name" name="name" autofocus required>
                                             </div>
                                             <div class="contact-box email">
                                                 <span class="changesize">ชื่อ E - mail <span style="color:red">*</span></span>
-                                                <input type="email" name="email" value="tyamdej@mail.com" required>
+                                                <input type="email" id="email" name="email" required>
                                             </div>
                                             <div class="contact-box subject">
                                                 <span class="changesize">หัวข้อเรื่อง <span style="color:red">*</span></span>
-                                                <input type="text" name="subject" value="รายงานระบบหน้าเว็บ" required>
+                                                <input type="text" id="subject" name="subject" required>
                                             </div>
                                         </div>
                                         <div class="single-contact-form">
                                             <div class="contact-box message">
                                                 <span class="changesize">ระบุข้อความที่จะติดต่อ <span style="color:red">*</span></span>
-                                                <textarea name="message" required>ระบบหน้าเว็บมีปัญหา</textarea>
+                                                <textarea id="message" name="message" required></textarea>
                                             </div>
                                             <div class="contact-btn">
-                                                <button type="submit" class="htc__btn btn--theme fontchange changesize">ส่งข้อความ</button>
+                                                <button type="submit" class="htc__btn btn--theme fontchange changesize" onclick="sendmail()">ส่งข้อความ</button>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
                             </div>
                             {{--<div class="form-output">--}}
                                 {{--<p class="form-messege"></p>--}}
@@ -123,14 +120,56 @@
             </div>
         </section>
         <!-- End Contact Address -->
-        @component('suttikan.newsletter')
-        @endcomponent()
+        {{--@component('suttikan.newsletter')--}}
+        {{--@endcomponent()--}}
 
       </div>
     </div>
 
+    {{--script send mail--}}
+    <script>
+
+        function sendmail(){
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                type:'POST',
+                url:'{{ route('MailSender') }}',
+                data:{
+                    name:$('#name').val(),
+                    email:$('#email').val(),
+                    subject:$('#subject').val(),
+                    message:$('#message').val()
+                },
+                success:function(data){
+                    swal({
+                        position: 'center',
+                        type: 'success',
+                        title: 'ส่งข้อความ เรียบร้อย',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    setTimeout(function () {
+                        window.location.href = "{{route('contact')}}";
+                    }, 1600);
+                },
+                error:function(data){
+                    swal({
+                        position: 'center',
+                        type: 'warning',
+                        title: 'ข้อมูลผิดพลาด',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+            });
+        }
+    </script>
     <!-- Google Map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-f9skYNke0YdQSB1uIkUXvnRcKK_aR8U"></script>
     <script>
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);

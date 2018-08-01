@@ -1,4 +1,5 @@
 <!-- Start Counter Up Area -->
+
 <section class="htc__counterup__area ptb--50" style="background: rgba(0, 0, 0, 0) url(images/bg/3.jpg) no-repeat scroll center center / cover ;">
     <div class="container">
         <div class="row">
@@ -9,7 +10,7 @@
                         <div class="fact__details">
                             <div class="funfact__count__inner">
                                 <div class="fact__count ">
-                                    <span class="count">41</span>
+                                    <span class="count">{{ $project_all }}</span>
                                 </div>
                             </div>
                             <div class="fact__title">
@@ -23,7 +24,7 @@
                         <div class="fact__details">
                             <div class="funfact__count__inner">
                                 <div class="fact__count ">
-                                    <span class="count">37</span>
+                                    <span class="count">{{ $project_success }}</span>
                                 </div>
                             </div>
                             <div class="fact__title">
@@ -37,7 +38,7 @@
                         <div class="fact__details">
                             <div class="funfact__count__inner">
                                 <div class="fact__count " style="text-align:center;">
-                                    <span class="count">4</span>
+                                    <span class="count">{{ $project_waitaa }}</span>
                                 </div>
                             </div>
                             <div class="fact__title">

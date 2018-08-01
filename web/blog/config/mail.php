@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'mailgun'),
+    'driver' => env('MAIL_DRIVER', 'sparkpost'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.sparkpostmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'tyamdej@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'ระบบรายงาน'),
+        'address' => env('MAIL_FROM_ADDRESS', 'meenkc@suttikan.co.th'),
+        'name' => env('MAIL_FROM_NAME', 'ผู้ใช้จากหน้าเว็บ'),
     ],
 
     /*
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION', 'STARTTLS'),
 
     /*
     |--------------------------------------------------------------------------
@@ -121,9 +121,4 @@ return [
     ],
 
 
-//    mailgun
-    'mailgun' => [
-        'domain' => 'mail.suttikan.com',
-        'secret' => 'f3cede6fb11a739e02c095e4bc195bc1-3b1f59cf-1db8e890',
-    ],
 ];

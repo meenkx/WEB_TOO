@@ -28,6 +28,7 @@
         <link rel="apple-touch-icon" href="{{ asset('images/apple-touch-icon.png') }}">
 
         <!-- All css files are included here. -->
+        <script src="https://unpkg.com/sweetalert2@7.18.0/dist/sweetalert2.all.js"></script>
         <!-- Bootstrap fremwork main css -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
@@ -200,11 +201,18 @@
                         </div>
                         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
                             <div class="header__top__right">
-                                <ul class="login-register">
-                                    <li><a href="{{ route('login-register') }}">LOGIN</a></li>
-                                    <li class="separator">/</li>
-                                    <li><a href="{{ route('login-register') }}">REGISTER</a></li>
-                                </ul>
+                                <!-- Authentication Links -->
+                                @guest
+                                    <ul class="login-register">
+                                        <li><a href="{{ route('login-register') }}">LOGIN</a></li>
+                                        <li class="separator">/</li>
+                                        <li><a href="{{ route('login-register') }}">REGISTER</a></li>
+                                    </ul>
+                                @else
+                                    <ul class="login-register">
+                                        <li><a href="{{ route('home') }}">DASHBOARD</a></li>
+                                    </ul>
+                                @endguest
                                 <!-- <div class="heaher__top__btn">
                                     <a href="#">สนใจติดต่อ</a>
                                 </div> -->
@@ -228,36 +236,46 @@
                         <div class="col-md-8 col-sm-6 col-xs-5">
                             <nav class="main__menu__nav  hidden-xs hidden-sm">
                                 <ul class="main__menu">
-                                    <li><a href="{{ route('/')}}">HOME</a></li>
-                                    <li><a href="{{ route('About') }}">ABOUT</a></li>
-                                    <li><a href="{{ route('service') }}">SERVICES</a></li>
-                                    <li class="drop"><a href="{{ route('projectmain') }}">PROJECTS</a>
-                                        <ul class="dropdown">
-                                            <li><a href="{{ route('projectlist') }}">projects three</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="{{ route('contact') }}">CONTACT</a></li>
+                                    <li><a href="{{ route('/')}}">หน้าแรก</a></li>
+                                    <li><a href="{{ route('About') }}">เกี่ยวกับ</a></li>
+                                    <li><a href="{{ route('service') }}">การบริการ</a></li>
+                                    <li><a href="{{ route('projectmain') }}">โปรเจค</a></li>
+                                    {{--<li class="drop"><a href="{{ route('projectmain') }}">PROJECTS</a>--}}
+                                        {{--<ul class="dropdown">--}}
+                                            {{--<li><a href="{{ route('projectlist') }}">projects three</a></li>--}}
+                                        {{--</ul>--}}
+                                    {{--</li>--}}
+                                    <li><a href="{{ route('contact') }}">ติดต่อ</a></li>
                                 </ul>
                             </nav>
                             <div class="mobile-menu clearfix visible-xs visible-sm">
                                 <nav id="mobile_dropdown">
                                     <ul>
-                                        <li><a href="{{ route('/')}}">HOME</a></li>
-                                        <li><a href="{{ route('About')}}">ABOUT</a></li>
-                                        <li><a href="{{ route('projectmain') }}">PROJECTS</a>
-                                            <ul>
-                                                <li><a href="{{ route('projectlist') }}">projects three</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="{{ route('contact') }}">contact</a></li>
+                                        <li><a href="{{ route('/')}}">หน้าแรก</a></li>
+                                        <li><a href="{{ route('About')}}">เกี่ยวกับ</a></li>
+                                        <li><a href="{{ route('projectmain') }}">โปรเจค</a></li>
+                                        <li><a href="{{ route('contact') }}">ติดต่อ</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-6 hidden-xs">
                             <div class="htc__header__search">
-                                <input type="text" placeholder="SEARCH">
-                                <a href="#"><i class="fa fa-search"></i></a>
+                                <input type="text" placeholder="ค้นหา หัวข้อ อย่างรวดเร็ว" id="menusearch" onfocus="MenuSearch()" style="width: 200px;" class="filter-input navbar-search" data-search-trigger="open" autocomplete="off">
+                                <a href="#" style="margin-left: -10px;"><i class="fa fa-search"></i></a>
+
+                                <div id="input-slide" class="dropdown-menu menu-icons dropdown-menu-left" style="top: 75px;left:-25px;display: block;width: 200px;margin-top: 10px;background-color:#1f2d30;opacity:0;transition: all .3s ease;">
+                                    <div class="form-group form-filter">
+                                        <i data-q-action="clear-filter" class="icon dripicons-cross clear-filter"></i>
+                                        <ul class="list-reset filter-list" data-scroll="minimal-dark" style="padding: 10px 15px;line-height: 2.2;">
+                                            <li><a class="dropdown-item" href="{{ route('/') }}">หน้าแรก</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('About') }}">เกี่ยวกับ</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('service') }}">การบริการ</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('projectmain') }}">โปรเจค</a></li>
+                                            <li><a class="dropdown-item" href="{{ route('contact') }}">ติดต่อ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -298,7 +316,7 @@
     <script src="{{ asset('js/slick.min.js') }}"></script>
     <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
     <!-- Google Map js -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmGmeot5jcjdaJTvfCmQPfzeoG_pABeWo"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-f9skYNke0YdQSB1uIkUXvnRcKK_aR8U"></script>
     <script>
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
@@ -567,7 +585,14 @@
     <script src="{{ asset('js/waypoints.min.js') }}"></script>
     <!-- Main js file that contents all jQuery plugins activation. -->
     <script src="{{ asset('js/main.js') }}"></script>
-
-
+    <script src="{{ asset('js/menusearch.js') }}"></script>
+    <script>
+        function MenuSearch() {
+                document.getElementById("input-slide").style.opacity = "1";
+        }
+        $('#menusearch').on('focusout',function () {
+            document.getElementById("input-slide").style.opacity = "0";
+        });
+    </script>
     </body>
 </html>
