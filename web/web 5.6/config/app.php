@@ -162,6 +162,8 @@ return [
 
         Barryvdh\Cors\ServiceProvider::class,
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class,
+
     ],
 
     /*

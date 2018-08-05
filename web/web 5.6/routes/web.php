@@ -30,6 +30,9 @@ Route::get('/delete-project/{Name}/{CodeName}', 'HomeController@DeleteProjectNam
 
 //UserPageController
 Route::get('/', 'UserPageController@main')->name('/');
+Route::get('/test', function () {
+    return 'Hello World';
+})->name('/test');
 Route::get('/project-main', 'UserPageController@UserPageController')->name('projectmain');
 Route::get('/contact', 'UserPageController@contact')->name('contact');
 Route::get('/home-service', 'UserPageController@HomeService')->name('HomeService');
